@@ -1,0 +1,54 @@
+// Все элементы формы
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='password'],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  outline: 0 none;
+  border: 0;
+  padding: 15px;
+  font-family: $ubuntuLight;
+  color: $white;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+  color: $white;
+  opacity: 1 !important;
+  font-family: $ubuntuLight;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $white;
+  opacity: 1;
+  font-family: $ubuntuLight;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $white;
+  opacity: 1 !important;
+  font-family: $ubuntuLight;
+}
+
+:-ms-input-placeholder {
+  color: $white;
+  opacity: 1 !important;
+  font-family: $ubuntuLight;
+}
+
+::placeholder {
+  color: $white;
+  opacity: 1 !important;
+  font-family: $ubuntuLight;
+}

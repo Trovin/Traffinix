@@ -1,0 +1,114 @@
+// Osvald regular
+@font-face {
+  font-family: 'Oswald';
+  font-weight: 400;
+  src:  local('Oswald'), local('Oswald-Regular');
+  src:  url('~@fonts/Oswald/oswaldRegular/Oswald-Regular.eot');
+  src:  url('~@fonts/Oswald/oswaldRegular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~@fonts/Oswald/oswaldRegular/Oswald-Regular.woff') format('woff'),
+  url('~@fonts/Oswald/oswaldRegular/Oswald-Regular.ttf') format('truetype'),
+  url('~@fonts/Oswald/oswaldRegular/Oswald-Regular.svg#Oswald-Regular') format('svg');
+}
+// Osvald bold
+@font-face {
+  font-family: 'OswaldBold';
+  font-weight: 700;
+  src:  local('Oswald-Bold'), local('Oswald-Bold');
+  src:  url('~@fonts/Oswald/oswaldBold/Oswald-Bold.eot');
+  src:  url('~@fonts/Oswald/oswaldBold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+  url('~@fonts/Oswald/oswaldBold/Oswald-Bold.woff') format('woff'),
+  url('~@fonts/Oswald/oswaldBold/Oswald-Bold.ttf') format('truetype'),
+  url('~@fonts/Oswald/oswaldBold/Oswald-Bold.svg#Oswald-Bold') format('svg');
+}
+
+// Ubuntu regular
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  src:  local('Ubuntu'), local('Ubuntu');
+  src:  url('~@fonts/Ubuntu/UbuntuRegular/Ubuntu.eot');
+  src:  url('~@fonts/Ubuntu/UbuntuRegular/Ubuntu.eot?#iefix') format('embedded-opentype'),
+  url('~@fonts/Ubuntu/UbuntuRegular/Ubuntu.woff') format('woff'),
+  url('~@fonts/Ubuntu/UbuntuRegular/Ubuntu.ttf') format('truetype'),
+  url('~@fonts/Ubuntu/UbuntuRegular/Ubuntu.svg#Oswald-Regular') format('svg');
+}
+// Ubuntu bold
+@font-face {
+  font-family: 'UbuntuBold';
+  font-weight: 700;
+  src:  local('Ubuntu-Bold'), local('Ubuntu-Bold');
+  src:  url('~@fonts/Ubuntu/ubuntuBold/Ubuntu-Bold.eot');
+  src:  url('~@fonts/Ubuntu/ubuntuBold/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+  url('~@fonts/Ubuntu/ubuntuBold/Ubuntu-Bold.woff') format('woff'),
+  url('~@fonts/Ubuntu/ubuntuBold/Ubuntu-Bold.ttf') format('truetype'),
+  url('~@fonts/Ubuntu/ubuntuBold/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+}
+// Ubuntu light
+@font-face {
+  font-family: 'UbuntuLight';
+  font-weight: 300;
+  src:  local('Ubuntu-Light'), local('Ubuntu-Light');
+  src:  url('~@fonts/Ubuntu/ubuntuLight/Ubuntu-Light.eot');
+  src:  url('~@fonts/Ubuntu/ubuntuLight/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+  url('~@fonts/Ubuntu/ubuntuLight/Ubuntu-Light.woff') format('woff'),
+  url('~@fonts/Ubuntu/ubuntuLight/Ubuntu-Light.ttf') format('truetype'),
+  url('~@fonts/Ubuntu/ubuntuLight/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+}
+
+
+// Заголовки
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 130px;
+  margin: 0;
+
+  @include max-w($screen-lg) {
+    font-size: 42px;
+    line-height: 80px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+
+  @include max-w($screen-lg) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+
+  @include max-w($screen-lg) {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ubuntuLight;
+
+  @include max-w($screen-sm) {
+    font-size: 14px;
+  }
+}

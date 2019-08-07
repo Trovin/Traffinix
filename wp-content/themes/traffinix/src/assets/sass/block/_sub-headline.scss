@@ -1,0 +1,25 @@
+.sub-headline {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: $ubuntu;
+  margin-bottom: 25px;
+  color: #666;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+
+  @include max-w($screen-md) {
+    margin-bottom: 15px;
+    font-size: 16px;
+    min-height: inherit;
+  }
+
+  @include max-w($screen-sm) {
+    display: block;
+    text-align: center;
+  }
+
+  &_careers {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,91 @@
+// Кнопки
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 0;
+  padding: 18px;
+  min-width: 160px;
+  background-color: #ff6d15;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  font-family: $ubuntu;
+  transition: $transition;
+  text-align: center;
+
+  @include max-w($screen-sm) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: $btn-hover;
+    color: $white;
+  }
+
+  &_small {
+    padding: 12px 20px;
+    min-width: 80px;
+    font-size: 14px;
+    background-color: $btn-small;
+
+    &:hover {
+      background-color: $btn-small_hover;
+      color: $btn-small;
+    }
+  }
+
+  &_transparent {
+    background-color: transparent;
+    -webkit-box-shadow: 1px 2px 20px 0px rgba(37,18,47,1);
+    -moz-box-shadow: 1px 2px 20px 0px rgba(37,18,47,1);
+    box-shadow: 1px 2px 20px 0px rgba(37,18,47,1);
+
+    &:hover {
+      background-color: rgba(111, 53, 58, 0.6);
+    }
+  }
+
+  &_default {
+    -webkit-box-shadow: 0px 7px 19px 1px rgba(219,173,147,1);
+    -moz-box-shadow: 0px 7px 19px 1px rgba(219,173,147,1);
+    box-shadow: 0px 7px 19px 1px rgba(219,173,147,1);
+  }
+
+  &_submit {
+    min-width: 120px;
+    padding: 15px;
+    background-color: $btn-small;
+
+    &:hover {
+      background-color: $btn-small_hover;
+      color: $btn-hover;
+    }
+  }
+
+  &_default-submit {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.75);
+
+    &:hover {
+      background-color: $white;
+      color: $theme;
+    }
+  }
+}
+
+/* mixing btn */
+.header__btn_small {
+  margin-left: 10px;
+
+  @include max-w($screen-md) {
+    margin: 0 0 15px;
+  }
+}

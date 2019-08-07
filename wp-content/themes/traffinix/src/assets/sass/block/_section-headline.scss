@@ -1,0 +1,49 @@
+.section-headline {
+  margin-bottom: 25px;
+  font-family: $osvald-bold;
+  text-transform: uppercase;
+  color: $black;
+
+  @include max-w($screen-sm) {
+    text-align: center;
+  }
+
+  &_intro {
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $white;
+
+    @include max-w($screen-lg) {
+      font-size: 62px;
+      line-height: 120px;
+    }
+
+    @include max-w($screen-md) {
+      font-size: 42px;
+      line-height: 80px;
+    }
+
+    @include max-w(580px) {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &_media {
+    @include max-w(680px) {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &_services {
+    margin-bottom: 30px;
+    text-align: left;
+
+    @include max-w($screen-sm) {
+      text-align: center;
+    }
+  }
+}

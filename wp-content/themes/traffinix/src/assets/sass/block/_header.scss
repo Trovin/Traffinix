@@ -1,0 +1,197 @@
+.header {
+  width: 100%;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-page {
+  width: 100%;
+  padding: 15px 0;
+  background-color: $black;
+  position: relative;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 255px;
+  max-width: 100%;
+
+  @include max-w($screen-xl) {
+    width: 180px;
+  }
+}
+
+.main-nav__container {
+  @include max-w($screen-md) {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none;
+    z-index: 7;
+    overflow-y: auto;
+  }
+}
+
+.main-nav__flex {
+  @include max-w($screen-md) {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  @include max-w($screen-md) {
+    height: 100%;
+    padding: 40px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  list-style: none;
+
+  @include max-w($screen-md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+}
+
+.main-nav__item {
+  margin-left: 30px;
+
+  @include max-w($screen-xl) {
+    margin-left: 20px;
+  }
+
+  @include max-w($screen-md) {
+    margin: 10px 0;
+  }
+}
+
+.main-actions {
+  display: flex;
+  margin-left: 10px;
+
+  @include max-w($screen-md) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 24px;
+  border-bottom: 2px solid transparent;
+  transition: $transition;
+  color: $white;
+
+  @include max-w($screen-lg) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  @include max-w($screen-md) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $white;
+    color: $white;
+  }
+}
+
+//default state
+.flex-container {
+  display: flex;
+  align-items: center;
+
+  @include max-w($screen-md) {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px 20px;
+    overflow-y: auto;
+  }
+}
+
+.menu-action {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  display: none;
+  cursor: pointer;
+  z-index: 8;
+
+  @include max-w($screen-md) {
+    display: block;
+  }
+}
+.menu-action__item {
+  display: block;
+  width: 25px;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  background-color: $white;
+  position: absolute;
+  transition: 0.4s;
+  transform: translate(-50%, -50%);
+
+  &:first-child {
+    top: 1px;
+  }
+  &:last-child {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+//active state
+.menu-action_init .menu-action__item {
+  &:first-child {
+    transform: rotate(-45deg) translate(-50%, 0%);
+  }
+  &:nth-child(2n) {
+    opacity: 0;
+  }
+  &:last-child {
+    transform: rotate(45deg) translate(-50%, 0%);
+  }
+}
+
+.rotateEl {
+  transform: rotate(180deg);
+}
+
+.disabled-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

@@ -1,0 +1,42 @@
+//  Цвет
+$white: #fff;
+$black: #000;
+$text-color: #333;
+$theme: #ff6d15;
+$section-text: #666666;
+
+// Buttons color
+$btn-hover: #2d1c50;
+$btn-small: #2d1c50;
+$btn-small_hover: #ffffff;
+
+// Effects
+$transition: .4s;
+
+// Цвет ссылки
+$link-color: #55b3f3;
+$link-color--hover: darken($link-color, 20%);
+
+//  Типографика
+$font-family: 'Oswald', Helvetica, Arial, sans-serif;
+$osvald-bold: 'OswaldBold', Helvetica, Arial, sans-serif;
+
+$ubuntu: 'Ubuntu', Helvetica, Arial, sans-serif;
+$ubuntuBold: 'UbuntuBold', Helvetica, Arial, sans-serif;
+$ubuntuLight: 'UbuntuLight', Helvetica, Arial, sans-serif;
+
+
+$font-size: 16px;
+$font-weight: 400; // Regular
+$line-height: 24px;
+
+// Ширина контейнера
+$container-padding: 15px;
+$container-width: 1140px;
+
+//  Адаптивность и соответствующие ширины контейнера
+// $screen-xs: 0;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1024px;
+$screen-xl: 1180px;

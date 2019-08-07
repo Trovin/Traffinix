@@ -1,0 +1,29 @@
+.social-list {
+  display: flex;
+  list-style: none;
+}
+
+.social-item {
+  font-size: 36px;
+  margin: 0 10px;
+  color: #8c8798;
+  transition: $transition;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.social-link {
+  color: #8c8798;
+  transition: $transition;
+
+  .svg-inline--fa {
+    transition: 0.1s;
+  }
+
+  &:hover .svg-inline--fa {
+    color: $white;
+    transform: scale(1.1);
+  }
+}
