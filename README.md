@@ -19,6 +19,7 @@
 префикс для таблиц: `wp_`  
 
 ============================
+
 domain  name  traffinix.test
 
 wp-admin
