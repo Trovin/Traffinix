@@ -1,4 +1,4 @@
-## Разработка темы для WP
+﻿## Разработка темы для WP
 
 Клонируем репозиторий  
 
@@ -17,3 +17,11 @@
 домен для разработки: `example.local`  
 
 префикс для таблиц: `wp_`  
+
+============================
+domain  name  traffinix.test
+
+wp-admin
+
+TraffinixUser
+TraffinixUser100
